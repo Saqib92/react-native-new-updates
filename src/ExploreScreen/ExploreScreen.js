@@ -11,13 +11,9 @@ import * as React from 'react';
 } from 'react-native';
 import styles from './styles';
 import MapView, { PROVIDER_GOOGLE } from 'react-native-maps'; // remove PROVIDER_GOOGLE import if not using Google Maps
-import Geolocation from '@react-native-community/geolocation';
 
 
 const ExploreScreen = ({navigation}) =>{
-
-  Geolocation.getCurrentPosition(info => console.log(info));
-
    return (
      <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
         <View style={styles.container}>
